@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="greetingText">こんにちは</p>
+    <button onclick="changeText()">ボタン</button>
+
+    <p id="changeText">今日は暑いです</p>
+    <button onclick="changecolor()">ボタン</button>
+
+    <p id="color">色を入力してください</p>
+    <input id="in" type="text"></input>
+    <button onclick="changecolor()">変更する</button>
+
+    <script>
+    function changecolor() {
+        const textTag = document.getElementById("in")
+        console.log(textTag.value);
+        const pTag = document.getElementById("color").style.color=textTag.value
+    }
+
+    
+
+    // function changeText() {
+    //     const pTag = document.getElementById("greetingText")
+    //     pTag.innerHTML="さよなら"
+    //    }   
+    
+    // function changecolor() {
+    //     document.getElementById("changeText").style.color="red";
+    // }
+    </script>
+</body>
+</html>
+console.log(m + "クリックされました")
+if(en=="gu"){
+    const kobusiTag = document.getElementById("kobusi");
+    kobusiTag.style.display="block";
+}
+else if(en=="choki"){
+    const zariganiTag = document.getElementById("zarigani");
+    zariganiTag.style.display="block";
+}
+else{
+    const bintaTag = document.getElementById("binta");
+    bintaTag.style.display="block";
+}
+}
